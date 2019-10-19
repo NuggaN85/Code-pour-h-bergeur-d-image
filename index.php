@@ -40,7 +40,7 @@ $nom_fichier = time().$extention;
 // On upload le fichier sur le serveur. 
 if (move_uploaded_file($_FILES['fichier']['tmp_name'], $repertoire.$nom_fichier)) 
 { 
-$url = 'www.exemple.com'.$repertoire.''.$nom_fichier.''; 
+$url = 'www.monsite.com/'.$repertoire.''.$nom_fichier.''; 
 echo 'Votre image à été uploadée sur Le site avec succes!<br>Voici le lien: <br />
 	<br/>
 	<img src="uploads/'.$nom_fichier.'" width="120px" height="120px" border="2px" />
