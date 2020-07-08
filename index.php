@@ -7,7 +7,7 @@ if (isset($_FILES['fichier']))
 // On vérife le type du fichier 
 if ($_FILES['fichier']['type'] != 'image/png' && $_FILES['fichier']['type'] != 'image/jpeg' && $_FILES['fichier']['type'] != 'image/jpg' && $_FILES['fichier']['type'] != 'image/gif' ) 
 { 
-$erreur = 'Le fichier doit être au format *.jpeg, *.bmp, *.jpg, *.png, *.ico *.gif ou *.png .'; 
+$erreur = 'Le fichier doit être au format *.jpeg, *.jpg, *.png, *.gif'; 
 } 
 
 // On vérifie le poids de l'image 
