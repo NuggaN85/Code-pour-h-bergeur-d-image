@@ -4,19 +4,19 @@ $repertoire = 'uploads/'; // Repertoire d'upload
 if (isset($_FILES['fichier'])) 
 { 
 
-/ On vérifit le type du fichier 
+// On vérife le type du fichier 
 if ($_FILES['fichier']['type'] != 'image/png' && $_FILES['fichier']['type'] != 'image/jpeg' && $_FILES['fichier']['type'] != 'image/jpg' && $_FILES['fichier']['type'] != 'image/gif' ) 
 { 
 $erreur = 'Le fichier doit être au format *.jpeg, *.bmp, *.jpg, *.png, *.ico *.gif ou *.png .'; 
 } 
 
-// On vérifit le poids de l'image 
+// On vérifie le poids de l'image 
 elseif ($_FILES['fichier']['size'] > $poids_max) 
 { 
 $erreur = 'L\'image doit être inférieur à ' . $poids_max/1024 . 'Ko.'; 
 } 
 
-// On vérifit si le répertoire d'upload existe 
+// On vérifie si le répertoire d'upload existe 
 elseif (!file_exists($repertoire)) 
 { 
 $erreur = 'Erreur, le dossier d\'upload n\'existe pas.'; 
