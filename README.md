@@ -5,4 +5,4 @@ et crée un répertoire nommer " uploads"
 pensez a changer la partie "http://monsite.com" par l'url de votre site web (ligne 43)
 
 Fonction: ce code permet d'uploader des images et affiche le bbcode url et img et le lien direct.
-il affiche l'image avec une bordure de 2px et une taille de 120/120 pixels
+il affiche l'image avec une bordure de 2px et une taille de 150/150 pixels
