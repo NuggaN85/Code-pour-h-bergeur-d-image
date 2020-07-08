@@ -43,7 +43,7 @@ if (move_uploaded_file($_FILES['fichier']['tmp_name'], $repertoire.$nom_fichier)
 $url = 'www.monsite.com/'.$repertoire.''.$nom_fichier.''; 
 echo 'Votre image à été uploadée sur Le site avec succes!<br>Voici le lien: <br />
 	<br/>
-	<img src="uploads/'.$nom_fichier.'" width="120px" height="120px" border="2px" />
+	<img src="uploads/'.$nom_fichier.'" width="150px" height="150px" border="2px" /><br/>
 	<br/>
 <b>BBcode img</b> =  <input type="text" value="[img]' . $url . '/img" /><br />
 <br />
